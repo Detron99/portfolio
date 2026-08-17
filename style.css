@@ -1,0 +1,256 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+color: #222;
+background: #f5fbff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background: #075985;
+    padding: 15px 30px;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("https://content.health.harvard.edu/wp-content/uploads/2024/01/05d88a27-79aa-41a2-84f5-91e5b5eb36ff.jpg");
+  background-size: cover;
+  
+}
+
+.hero-content {
+  
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #bae6fd;
+}
+
+
+
+
+.subtitle {
+    color: #0284c7;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #075985;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #16a34a;
+}
+
+.hero-text {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn:hover {
+    background: #0369a1;
+}
+
+.section {
+    padding: 80px 25px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    color: #075985;
+    font-size: 35px;
+}
+
+.about {
+    background: white;
+}
+
+.about-content {
+    margin-bottom: 30px;
+}
+
+.about-content h3 {
+    color: #075985;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-card {
+    background: #e0f2fe;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.about-card h3 {
+    color: #075985;
+    margin-bottom: 15px;
+}
+
+.about-card li {
+    color: #0284c7;
+    margin: 8px 0;
+}
+
+.services {
+    background: #f0fdf4;
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.service-card h3 {
+    color: #075985;
+    margin-bottom: 10px;
+}
+
+.contact {
+    background: white;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info h3 {
+    color: #075985;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info strong {
+    color: #0284c7;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #075985;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #075985;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .service-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
